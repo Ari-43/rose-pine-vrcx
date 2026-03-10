@@ -7,7 +7,7 @@
 
 ## Notes
 
-This theme is a work-in progress. See [TODO.md](./todo.md) for more details. 
+This theme is a work-in progress. See [TODO.md](./TODO.md) for more details. 
 - Some elements have poor contrast
 - Some elements are not themed that will be
 - The light theme variant does not work

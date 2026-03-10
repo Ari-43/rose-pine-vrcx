@@ -1,15 +1,23 @@
 <p align="center">
     <img src="https://github.com/rose-pine/rose-pine-theme/raw/main/assets/icon.png" width="80" />
-    <h2 align="center">Rosé Pine for App</h2>
+    <h2 align="center">Rosé Pine for VRCX</h2>
 </p>
 
 <p align="center">All natural pine, faux fur and a bit of soho vibes for the classy minimalist</p>
 
+## Notes
+
+This theme is a work-in progress. See [TODO.md](./todo.md) for more details. 
+- Some elements have poor contrast
+- Some elements are not themed that will be
+- The light theme variant does not work
+
 ## Usage
 
-1. Open App
-2. Under settings, import `rose-pine.theme`
-3. Select `Rosé Pine` from the themes dropdown
+1. Download your desired theme from the `/dist/` directory of this repository
+1. Rename the file to `custom.css`
+1. Open `~/.config/VRCX/` (Linux) or `%AppData%\VRCX` (Windows)
+1. Copy your `custom.css` file to the VRCX config directory (opened in the previous step)
 
 ## Gallery
 
@@ -27,12 +35,16 @@
 
 ## Thanks to
 
-- [You, it's you!](https://github.com/<username>)
+- [Ari43](https://ari43.net)
 
 ## Contributing
 
-Modify `template.json` using Rosé Pine variables, then build variants:
+Modify `template.css` using Rosé Pine variables, then build variants:
+
+<!-- BLOOM_BUILD_START -->
+This theme was built using [bloom](https://github.com/rose-pine/rose-pine-bloom):
 
 ```sh
-npx @rose-pine/build@latest
+bloom build template.css
 ```
+<!-- BLOOM_BUILD_END -->

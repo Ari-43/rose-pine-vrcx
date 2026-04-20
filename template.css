@@ -1,59 +1,142 @@
-* {
-    --background-color: $base;
-    --background: $base;
-    --foreground: $text;
-    --card: $surface;
-    --card-foreground: $text;
-    --popover: $overlay;
-    --popover-foreground: $text;
-    --primary: $iris;
-    --primary-foreground: $base;
-    --secondary: $highlightLow;
-    --secondary-foreground: $text;
-    --muted: $muted;
-    --muted-foreground: $text;
-    --accent: $iris;
-    --accent-foreground: $base;
-    --destructive: $love;
-    /* --destructive-foreground: oklch(0.577 0.245 27.325); */
-    --border: $highlightMed;
-    --input: $highlightMed;
-    --ring: $highlightMed;
-    --chart-1: $love;
-    --chart-2: $foam;
-    --chart-3: $pine;
-    --chart-4: $gold;
-    --chart-5: $rose;
-    /* defalut 0.625rem */
-    --radius: 0.375rem;
-    --sidebar: var(--background-color);
-    --sidebar-foreground: $text;
-    --sidebar-primary: $iris;
-    --sidebar-primary-foreground: $base;
-    --sidebar-accent: $surface;
-    --sidebar-accent-foreground: $text;
-    --sidebar-border: $highlightMed;
-    --sidebar-ring: $highlightMed;
+/* Hardcoded Dawn theme for light mode */
+:root {
+    --background-color: #faf4ed !important;
+    --background: #faf4ed !important;
+    --foreground: #575279 !important;
+    --card: #fffaf3 !important;
+    --card-foreground: #575279 !important;
+    --popover: #f2e9e1 !important;
+    --popover-foreground: #575279 !important;
+    --primary: #907aa9 !important;
+    --primary-foreground: #faf4ed !important;
+    --secondary: #f4ede8 !important;
+    --secondary-foreground: #575279 !important;
+    --muted: #9893a5 !important;
+    --muted-foreground: #575279 !important;
+    --accent: #907aa9 !important;
+    --accent-foreground: #faf4ed !important;
+    --destructive: #b4637a !important;
+    /* --destructive-foreground: oklch(0.577 0.245 27.325) !important; */
+    --border: #dfdad9 !important;
+    --input: #dfdad9 !important;
+    --ring: #dfdad9 !important;
+    --chart-1: #b4637a !important;
+    --chart-2: #56949f !important;
+    --chart-3: #286983 !important;
+    --chart-4: #ea9d34 !important;
+    --chart-5: #d7827e !important;
+    /* default 0.625rem */
+    --radius: 0.375rem !important;
+    --sidebar: var(--background-color) !important;
+    --sidebar-foreground: #575279 !important;
+    --sidebar-primary: #907aa9 !important;
+    --sidebar-primary-foreground: #faf4ed !important;
+    --sidebar-accent: #fffaf3 !important;
+    --sidebar-accent-foreground: #575279 !important;
+    --sidebar-border: #dfdad9 !important;
+    --sidebar-ring: #dfdad9 !important;
 
     /* VRChat Status Colors */
-    --status-online: $foam;
-    --status-joinme: $iris;
-    --status-askme: $gold;
-    --status-busy: $love;
-    --status-active: $gold;
-    --status-offline: $muted;
-    --status-offline-alt: $subtle;
-    --status-offline-card: $subtle; 
+    --status-online: #56949f !important;
+    --status-joinme: #907aa9 !important;
+    --status-askme: #ea9d34 !important;
+    --status-busy: #b4637a !important;
+    --status-active: #ea9d34 !important;
+    --status-offline: #9893a5 !important;
+    --status-offline-alt: #797593 !important;
+    --status-offline-card: #797593 !important; 
 
     /* Platform Colors */
-    --platform-pc: $iris;
-    --platform-quest: $pine;
-    --platform-ios: $subtle;
+    --platform-pc: #907aa9 !important;
+    --platform-quest: #286983 !important;
+    --platform-ios: #797593 !important;
 
     /* Favorite Group Visibility Colors */
-    --visibility-public: $pine;
-    --visibility-friends: $gold;
-    --visibility-private: $love;
+    --visibility-public: #286983 !important;
+    --visibility-friends: #ea9d34 !important;
+    --visibility-private: #b4637a !important;
+
+    --font-western-primary: 'Inter Variable';
+    --font-western: 'ellipsis-font', -apple-system, var(--font-western-primary), 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'DejaVu Sans', sans-serif;
+    --font-symbol: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/* Fixes that may not be necessary or probably should have better solutions, but the theme is broken otherwise */
+.x-tag-platform-pc {
+    color: var(--platform-pc);
+    border-color: var(--platform-pc)!important;
+}
+.x-tag-platform-quest {
+    color: var(--platform-quest);
+    border-color: var(--platform-quest)!important;
+}
+.x-tag-platform-ios {
+    color: var(--platform-ios);
+    border-color: var(--platform-ios)!important;
+}
+
+.x-tag-age-verification {
+    color: #56949f !important;
+    border-color: #56949f!important;
+}
+
+
+.dark {
+    --background-color: $base !important;
+    --background: $base !important;
+    --foreground: $text !important;
+    --card: $surface !important;
+    --card-foreground: $text !important;
+    --popover: $overlay !important;
+    --popover-foreground: $text !important;
+    --primary: $accent !important;
+    --primary-foreground: $base !important;
+    --secondary: $highlightLow !important;
+    --secondary-foreground: $text !important;
+    --muted: $muted !important;
+    --muted-foreground: $text !important;
+    --accent: $accent !important;
+    --accent-foreground: $base !important;
+    --destructive: $love !important;
+    /* --destructive-foreground: oklch(0.577 0.245 27.325) !important; */
+    --border: $highlightMed !important;
+    --input: $highlightMed !important;
+    --ring: $highlightMed !important;
+    --chart-1: $love !important;
+    --chart-2: $foam !important;
+    --chart-3: $pine !important;
+    --chart-4: $gold !important;
+    --chart-5: $rose !important;
+    /* default 0.625rem */
+    --radius: 0.375rem !important;
+    --sidebar: var(--background-color) !important;
+    --sidebar-foreground: $text !important;
+    --sidebar-primary: $accent !important;
+    --sidebar-primary-foreground: $base !important;
+    --sidebar-accent: $surface !important;
+    --sidebar-accent-foreground: $text !important;
+    --sidebar-border: $highlightMed !important;
+    --sidebar-ring: $highlightMed !important;
+
+    /* VRChat Status Colors */
+    --status-online: $foam !important;
+    --status-joinme: $iris !important;
+    --status-askme: $gold !important;
+    --status-busy: $love !important;
+    --status-active: $gold !important;
+    --status-offline: $muted !important;
+    --status-offline-alt: $subtle !important;
+    --status-offline-card: $subtle !important; 
+
+    /* Platform Colors */
+    --platform-pc: $iris !important;
+    --platform-quest: $pine !important;
+    --platform-ios: $subtle !important;
+
+    /* Favorite Group Visibility Colors */
+    --visibility-public: $pine !important;
+    --visibility-friends: $gold !important;
+    --visibility-private: $love !important;
 
     --font-western-primary: 'Inter Variable';
     --font-western:
@@ -77,6 +160,6 @@
 }
 
 .x-tag-age-verification {
-    color: $foam;
+    color: $foam !important;
     border-color: $foam!important;
 }

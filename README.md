@@ -5,19 +5,13 @@
 
 <p align="center">All natural pine, faux fur and a bit of soho vibes for the classy minimalist</p>
 
-## Notes
-
-This theme is a work-in progress. See [TODO.md](./TODO.md) for more details. 
-- Some elements have poor contrast
-- Some elements are not themed that will be
-- The light theme variant does not work
-
 ## Usage
 
-1. Download your desired theme from the `/dist/` directory of this repository
+1. Download your desired theme from the [`/dist/`](https://github.com/Ari-43/rose-pine-vrcx/tree/main/dist) directory of this repository
 1. Rename the file to `custom.css`
-1. Open `~/.config/VRCX/` (Linux) or `%AppData%\VRCX` (Windows)
+1. Open `~/.config/VRCX/` (Linux) or `%AppData%\VRCX\` (Windows, use Win + R)
 1. Copy your `custom.css` file to the VRCX config directory (opened in the previous step)
+1. Set VRCX's theme toggle to dark for rose-pine and rose-pine-moon, or light for rose-pine-dawn.
 
 ## Gallery
 
@@ -32,6 +26,11 @@ This theme is a work-in progress. See [TODO.md](./TODO.md) for more details.
 ### Rosé Pine Dawn
 
 <img width="256" alt="Rosé Pine Dawn with App" src="https://github.com/user-attachments/assets/fb1b1d16-55e8-45db-b388-7c25250b8022" />
+
+## Notes
+
+- The light theme in VRCX settings will always enable the Dawn variant, regardless of variant
+- The Dawn variant will still be Dawn even when VRCX's theme toggle is set to *dark*
 
 ## Thanks to
 
